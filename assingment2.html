@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Now Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assingment.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      
+      <header class="header">
+        <div class="nav">
+          <div class="logo">
+            <div class="sun-icon-small"></div>
+            <span class="text">Weather Now</span>
+          </div>
+          <div class="logo-btn">
+            <button class="units-btn">
+              <i class="fa-solid fa-gear"></i> Units <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-section">
+          <h1>How's the sky looking today?</h1>
+          <div class="search-container">
+            <div class="search-wrapper">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" placeholder="Search for a place..." />
+            </div>
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard-grid">
+        
+        <section class="left-column">
+          
+          <div class="current-weather-card">
+            <div class="card-bg-effects"></div>
+            <div class="weather-info">
+              <h2>Berlin, Germany</h2>
+              <p>Tuesday, Aug 5, 2025</p>
+            </div>
+            <div class="weather-temp">
+              <div class="big-sun"></div>
+              <span>20°</span>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <h3>Feels Like</h3>
+              <p>18°</p>
+            </div>
+            <div class="stat-card">
+              <h3>Humidity</h3>
+              <p>46%</p>
+            </div>
+            <div class="stat-card">
+              <h3>Wind</h3>
+              <p>14 km/h</p>
+            </div>
+            <div class="stat-card">
+              <h3>Precipitation</h3>
+              <p>0 mm</p>
+            </div>
+          </div>
+
+          <div class="daily-forecast">
+            <h3>Daily forecast</h3>
+            <div class="daily-row">
+              <div class="day-card">
+                <span>Tue</span>
+                <i class="fa-solid fa-cloud-rain"></i>
+                <span class="range">20° 14°</span>
+              </div>
+              <div class="day-card">
+                <span>Wed</span>
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <span class="range">21° 15°</span>
+              </div>
+              <div class="day-card">
+                <span>Thu</span>
+                <i class="fa-solid fa-sun"></i>
+                <span class="range">24° 14°</span>
+              </div>
+              <div class="day-card">
+                <span>Fri</span>
+                <i class="fa-solid fa-cloud-sun"></i>
+                <span class="range">25° 13°</span>
+              </div>
+              <div class="day-card">
+                <span>Sat</span>
+                <i class="fa-solid fa-bolt"></i>
+                <span class="range">21° 15°</span>
+              </div>
+              <div class="day-card">
+                <span>Sun</span>
+                <i class="fa-solid fa-snowflake"></i>
+                <span class="range">25° 16°</span>
+              </div>
+              <div class="day-card">
+                <span>Mon</span>
+                <i class="fa-solid fa-wind"></i>
+                <span class="range">24° 15°</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="right-column">
+          <div class="hourly-card">
+            <div class="hourly-header">
+              <h3>Hourly forecast</h3>
+              <button class="day-select">Tuesday <i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            
+            <div class="hourly-list">
+              <div class="hour-item">
+                <div class="h-left"><i class="fa-solid fa-cloud"></i> <span>3 PM</span></div>
+                <div class="h-temp">20°</div>
+              </div>
+              <div class="hour-item">
+                <div class="h-left"><i class="fa-solid fa-cloud-sun"></i> <span>4 PM</span></div>
+                <div class="h-temp">20°</div>
+              </div>
+              <div class="hour-item">
+                <div class="h-left"><i class="fa-solid fa-sun"></i> <span>5 PM</span></div>
+                <div class="h-temp">20°</div>
+              </div>
+              <div class="hour-item">
+                <div class="h-left"><i class="fa-solid fa-cloud"></i> <span>6 PM</span></div>
+                <div class="h-temp">19°</div>
+              </div>
+              <div class="hour-item">
+                <div class="h-left"><i class="fa-solid fa-cloud-rain"></i> <span>7 PM</span></div>
+                <div class="h-temp">18°</div>
+              </div>
+              <div class="hour-item">
+                <div class="h-left"><i class="fa-solid fa-wind"></i> <span>8 PM</span></div>
+                <div class="h-temp">18°</div>
+              </div>
+              <div class="hour-item">
+                <div class="h-left"><i class="fa-solid fa-cloud-moon"></i> <span>9 PM</span></div>
+                <div class="h-temp">17°</div>
+              </div>
+              <div class="hour-item">
+                <div class="h-left"><i class="fa-solid fa-cloud"></i> <span>10 PM</span></div>
+                <div class="h-temp">17°</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </main>
+    </div>
+  </body>
+</html>
